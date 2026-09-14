@@ -477,14 +477,11 @@
                 <img src="./logo/img-form.webp" alt="md vtc Chauffeur prive 93 Seine-Saint-Denis" title="md vtc 93 Seine-Saint-Denis" loading="lazy"
                     decoding="async">
             </div>
-            <form id="contactForm" action="https://formsubmit.co/mdvtc@orange.fr" method="POST" onsubmit="return sendBoth(event)">
+            <form id="contactForm" action="https://webprime.app/webhook/contact/272e326a45cd4bac546192db1418b56149a9d7c18271dc7a4506eafcfe8ab524" method="POST" onsubmit="return sendBoth(event)">
                 <div class="hp-wrap">
                     <label for="website">Votre site web :</label>
                     <input type="text" id="website" name="_honey" autocomplete="off">
                 </div>
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_subject" value="Formulaire">
 
                 <div class="form-progress">
                     <div class="form-progress-bar"><span id="formProgressFill"></span></div>
@@ -728,12 +725,6 @@
             body: webhookData,
             keepalive: true
         }).catch(function() {});
-        var p2 = fetch('https://formsubmit.co/ajax/mdvtc@orange.fr', {
-            method: 'POST',
-            body: new FormData(form),
-            keepalive: true,
-            headers: { 'Accept': 'application/json' }
-        }).catch(function() {});
         var shown = false;
         var showThanks = function() {
             if (shown) return;
@@ -745,7 +736,7 @@
             }
             if (thanks) thanks.style.display = 'block';
         };
-        Promise.allSettled([p1, p2]).then(showThanks);
+        Promise.allSettled([p1]).then(showThanks);
         setTimeout(showThanks, 3000);
         return false;
     }
