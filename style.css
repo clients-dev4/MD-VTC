@@ -434,3 +434,94 @@ main>.texte1 p,main>section>.texte1 p,.texte1 p{margin:0 20px 16px;font-size:16p
 .p-slide .slide p strong{white-space:nowrap}@media screen and (min-width:1025px){.p-slide .slide p{font-size:14px;padding:22px 20px 24px}}
 @media screen and (max-width:767.98px){.site-footer{padding-bottom:84px}.footer-bottom{padding:16px 5% 10px}}
 @media screen and (min-width:768px) and (max-width:1024px){.navbar{padding:0 3%}.nav-menu{position:static;top:auto;gap:2px}.nav-item a,.dropdown-label{padding:8px 10px;font-size:.82rem}.nav-cta a{padding:8px 14px}.logo{height:56px;min-height:0;max-height:none;margin-left:0}}
+
+/* ===== Theme sombre : bleu-noir, cartes ardoise, accents or ===== */
+:root{color-scheme:dark}
+body{background-color:#0b1220;color:#dfe4ec}
+p{color:#b9c1cf}
+h1{color:#fff}
+h2{color:#fff}
+h3{color:#dfe4ec}
+strong{color:#e3c27a}
+a{color:#d4b06a}
+.texte1 a{color:#d4b06a}
+.section-intro{color:#aab3c5}
+
+/* Header */
+.navbar{background:rgba(11,18,32,.94);box-shadow:0 2px 24px rgba(0,0,0,.45);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-burger span{background:#fff}
+.nav-item a,.dropdown-label{color:#e6e9ef}
+.nav-item a:hover,.dropdown-label:hover{background:rgba(201,162,78,.12);color:#e3c27a}
+.arrow{border-color:#e6e9ef}
+.dropdown{background:#121b2e;border:1px solid rgba(255,255,255,.08);box-shadow:0 14px 40px rgba(0,0,0,.5)}
+.dropdown li a{color:#dfe4ec}
+.dropdown li a:hover{background:rgba(201,162,78,.12);color:#e3c27a}
+
+/* Boutons : or, texte bleu nuit */
+.nav-cta a,.bouton-1,.hero-btn-blue{background:linear-gradient(135deg,#d4b06a 0%,#b08a3a 100%);color:#0b1220 !important;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.nav-cta a:hover,.bouton-1:hover{background:linear-gradient(135deg,#e3c27a 0%,#c29b4a 100%);box-shadow:0 8px 22px rgba(0,0,0,.45)}
+.bouton-3,.form-container button,.form-nav .form-next,.form-nav .form-submit,.footer-cta{background:#c9a24e;color:#0b1220}
+.bouton-3:hover,.form-container button:hover,.form-nav .form-next:hover,.form-nav .form-submit:hover,.footer-cta:hover{background:#e3c27a;color:#0b1220}
+.form-nav .form-prev{background:transparent;border:1px solid #c9a24e;color:#e3c27a}
+.form-nav .form-prev:hover{background:rgba(201,162,78,.12)}
+
+/* Bandeau photo du haut */
+.img-index{box-shadow:0 18px 50px rgba(0,0,0,.5)}
+.img-index::after{background:linear-gradient(180deg,rgba(11,18,32,.15) 0%,rgba(11,18,32,.55) 100%)}
+
+/* Formulaires */
+.form-container{background:#121b2e;border:1px solid rgba(255,255,255,.08);box-shadow:0 22px 50px rgba(0,0,0,.4);color:#dfe4ec}
+.form-container h2{color:#fff}
+.form-container label{color:#dfe4ec}
+.form-container input,.form-container select,textarea{background:#0b1220;border:1px solid rgba(255,255,255,.14);color:#fff}
+.form-container input:focus,.form-container select:focus,textarea:focus{outline:none;border-color:#c9a24e}
+.form-progress{border-bottom-color:rgba(255,255,255,.08)}
+.form-progress-bar{background:rgba(255,255,255,.1)}
+.form-progress-bar span{background:linear-gradient(90deg,#9a7630,#e3c27a)}
+.form-progress-label{color:#e3c27a}
+
+/* Chiffres cles, references, flotte */
+.stat{background:#121b2e;border-color:rgba(255,255,255,.08);box-shadow:0 10px 26px rgba(0,0,0,.3)}
+.stat strong{color:#fff}
+.stat span{color:#d4b06a}
+.refs{background:#0f1a30;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05)}
+.fleet-section{background:#0f1729}
+.fleet-section .vehi-index{background:#121b2e;border-color:rgba(255,255,255,.08)}
+.fleet-section .nos-vehicules-pc img,.fleet-section .nos-vehicules img{background:#fff}
+
+/* Cartes de prix */
+.p-slide .slide p{background:#121b2e;border-color:rgba(255,255,255,.08);color:#b9c1cf;box-shadow:0 10px 28px rgba(0,0,0,.3)}
+.p-slide .slide p:hover{box-shadow:0 16px 38px rgba(0,0,0,.45)}
+.p-slide .slide p strong{color:#e3c27a}
+.strong-pvtc{color:#fff !important}
+
+/* FAQ */
+.faq-item{background:#121b2e;border-color:rgba(255,255,255,.08);box-shadow:none}
+.faq-item label{color:#fff}
+.faq-item label:hover,.faq-item input[type="checkbox"]:checked + label{background:#16213a}
+.faq-answer{background:#0f1729}
+.faq-answer p{color:#b9c1cf}
+
+/* Footer */
+.site-footer{background:#070c16;border-top-color:#c9a24e}
+
+/* Barre du bas (mobile) */
+.bottom-nav{background:#121b2e;border:1px solid rgba(255,255,255,.08);box-shadow:0 -4px 24px rgba(0,0,0,.5)}
+.bottom-nav-item,.bottom-nav-label{color:#dfe4ec}
+.bottom-nav-icon{background:rgba(201,162,78,.14);box-shadow:none}
+.bottom-nav-icon svg{stroke:#e3c27a}
+.bottom-nav-call .bottom-nav-icon{background:#c9a24e}
+.bottom-nav-call .bottom-nav-icon svg{fill:#0b1220}
+
+@media screen and (max-width:767.98px){
+.nav-menu{background:#0f1729;box-shadow:0 14px 34px rgba(0,0,0,.5)}
+.nav-item{border-bottom-color:rgba(255,255,255,.08)}
+.dropdown{background:rgba(255,255,255,.04);border:none;box-shadow:none}
+.dropdown li a{color:#b9c1cf}
+.dropdown li a:hover{color:#e3c27a}
+}
+/* Logo blanc detoure dans le header */
+.logo{height:58px;width:auto;transform:none}
+@media screen and (min-width:768px) and (max-width:1024px){.logo{height:50px}}
+@media screen and (max-width:767.98px){.logo,.logo:hover{height:50px;transform:none}}
+.faq-section h2{color:#fff}
