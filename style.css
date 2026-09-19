@@ -432,3 +432,4 @@ main>.texte1 p,main>section>.texte1 p,.texte1 p{margin:0 20px 16px;font-size:16p
 }
 @media screen and (min-width:1025px){.p-slide{max-width:1240px;gap:22px}.p-slide .slide p{padding:22px 22px 24px;font-size:14.5px;line-height:1.95}}
 .p-slide .slide p strong{white-space:nowrap}@media screen and (min-width:1025px){.p-slide .slide p{font-size:14px;padding:22px 20px 24px}}
+@media screen and (max-width:767.98px){.site-footer{padding-bottom:84px}.footer-bottom{padding:16px 5% 10px}}
